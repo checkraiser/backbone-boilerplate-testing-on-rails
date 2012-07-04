@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RailsBb</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+<script type="text/javascript">
+  // Localize or create a new JavaScript Template object.
+  var JST = window.JST = window.JST || {};
+</script>
+<%= requirejs_include_tag "application" %>
+</body>
+</html>

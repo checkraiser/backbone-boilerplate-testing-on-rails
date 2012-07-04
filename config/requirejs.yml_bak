@@ -1,0 +1,13 @@
+paths:
+  jquery: 'jquery'
+  lodash: 'lodash'
+  backbone: 'backbone'
+  mustache: 'mustache'
+shim:
+  backbone:
+    deps:
+      - lodash
+      - jquery
+    exports: 'Backbone'
+  'plugins/backbone.layoutmanager':
+    - backbone
